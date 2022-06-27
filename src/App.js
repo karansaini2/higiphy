@@ -16,7 +16,7 @@ function App() {
       });
     };
     fetchData();
-  }, []);
+  });
 
   const searchGifs = gifs.filter((name) => {
     return name.title.toLowerCase().includes(search.toLocaleLowerCase());
